@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+    <title>$5 Friday</title>
+</head>
+<body>
+    <h1>$5 Friday</h1>
+
+    <div id="countGen">
+        <form>
+            <label for="quantity">Choose how many players (1-10)</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10">
+        <br><br>
+            <button type="button" id="playerCountSubmit" onclick="genCount()">Gen Players</button>
+        </form>
+    </div>
+    <div class="hide" id="nameGen">
+        <form id="nameForm">
+
+        <br><br>
+            <button type="button" id="nameSubmit" onclick="genPlayers()">Submit</button>
+        </form>
+    </div>
+<div class="hide" id="betGen">
+    <form id="betForm">
+
+        
+    <br><br>
+        <button type="button" id="betSubmit" onclick="genBet()" >Submit Bets</button>
+    </form>
+</div>
+
+    <div class="hide" id="gameBoard">
+
+    </div>
+
+    <script src="../js/main.js"/>
+</body>
+</html>
