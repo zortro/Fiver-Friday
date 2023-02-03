@@ -120,9 +120,12 @@ function playerObj(name, cwBet, obBet, pcBet, tlBet, prBet) {
     this.prBet = prBet
 }
 
+let sum = 0
+
+//add arr values together to gather sum
 function calculate() {
     for(let i = 0; i < arr.length; i++) {
-        sum += arr[i]
+        sum += player.cwBet
     }
 }
 
